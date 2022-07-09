@@ -1,0 +1,7 @@
+install nodejs
+https://nodejs.org/en/download/
+download code from here https://github.com/DeepankRx/chat/
+open the cloned folder in vs code
+npm i
+npm start
+search localhost:9000 on browser

@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    link(rel="stylesheet" href="css/styles.css")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Student Chat Bot
+  body 
+  .navbar
+     ul
+      li
+        a.active(href='/') Home
+      li
+        a(href='/login') Login
+  .blank
+.container
+  .header
+    h2 Messages
+    a(href='http://chatbotforstudent.herokuapp.com/') +
+  .chat-box
+    .message-box.left-img
+      .picture
+        img(src='image/bot.jpg' alt="bot image")
+      .message
+        span Chat Bot
+        p #{answer}
+        p #{data}
+    .message-box.right-img
+      .picture
+        img(src='image/user.png' title='user name')
+      .message
+        span You
+        p #{question}
+    .enter-message
+        form(action="/" method="post")
+          input(type='text' name="query" placeholder='Enter your message..')
+          input(type='submit' value='Send' class="send")
+
